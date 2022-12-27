@@ -10,12 +10,9 @@ if (isset($_POST['submit'])) {
     $result    = mysqli_query($connect, $sql_query);
 
     if ($result) {
-        header("location: ../CRUD%20Operations/user.php?error=none");
-        exit();
+        header("location: ../CRUD%20Operations/user.php");
     }else {
         die(mysqli_error($connect));
-        header("location: ../CRUD%20Operations/user.php?error=Could not insert data");
-        exit();
     }
 }
 
