@@ -32,6 +32,7 @@ include_once "connect.php";
             $result    = mysqli_query($connect, $sql_query);
             if ($result) {
                 while ($row = mysqli_fetch_assoc($result)) {
+                    $id     = $row['Id'];
                     $name   = $row['Name'];
                     $email  = $row['Email'];
                     $mobile = $row['Mobile'];
@@ -43,12 +44,13 @@ include_once "connect.php";
                     <td>'.$mobile.'</td>
                     <td>'.$pwd.'</td>
                     <td>
-                        <button class="btn btn-primary"><a href="update.php"
+                        <button class="btn btn-primary"><a href="update.php?updateid='.$id.'"
                         class="text-light">Update</a></button>
                         <button class="btn btn-danger"><a href="delete.php?deleteid='.$id.'"
                         class="text-light">Delete</a></button>
                     </td>
                     </tr>';
+                    
                 }
             }
         ?>
