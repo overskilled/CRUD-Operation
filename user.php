@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $result    = mysqli_query($connect, $sql_query);
 
     if ($result) {
-        header("location: ../CRUD%20Operations/user.php");
+        header("location: ../CRUD%20Operations/display.php");
     }else {
         die(mysqli_error($connect));
     }
