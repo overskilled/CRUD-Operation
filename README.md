@@ -13,7 +13,7 @@ Here, my job was to create an interface so as to ease the basic create, read, up
 
 On this project, i created a database called "crudoperation" which you can reproduce with the [crudoperation.sql](https://github.com/overskilled/CRUD-Operation/blob/master/crudoperation.sql) by importing it using phpMyAdmin.
 
-Then i created a table named "crud" to store all the data entered by my user in the form created in[user.php](https://github.com/overskilled/CRUD-Operation/blob/master/user.php)
+Then i created a table named "crud" to store all the data entered by my user in the form created in [user.php](https://github.com/overskilled/CRUD-Operation/blob/master/user.php)
 
 Furthermore, i created a page to display all the users data in a table in [display.php](https://github.com/overskilled/CRUD-Operation/blob/master/display.php).
 
